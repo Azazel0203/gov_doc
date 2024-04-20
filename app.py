@@ -17,7 +17,7 @@ embeddings = helper.get_embeddings()
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 model = genai.GenerativeModel('gemini-pro')
 vectorstore, PROMPT = helper.load_vectorstore(prompt_template=prompt_template, embeddings=embeddings)
-retriever = vectorstore.as_retriever(search_kwargs={'k': 2})
+retriever = vectorstore.as_retriever(search_kwargs={'k': 5})
 chatting = model.start_chat()
 
 MAX_HISTORY_LENGTH = 10

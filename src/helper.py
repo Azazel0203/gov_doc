@@ -46,8 +46,6 @@ def store_data(text_chunks: list, embeddings: HuggingFaceEmbeddings, index: Inde
     print("Storing the data on the Pinecone Vector DataBase")
     total_documents = len(text_chunks)
     ma = 0
-    for text_chunk in text_chunks:
-        print(text_chunk.page_content)
     with tqdm(total=total_documents, desc="Storing documents") as pbar:
         for i in range(0, total_documents, batch_size):
             batch = text_chunks[i:i + batch_size]
