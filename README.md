@@ -36,7 +36,42 @@ pip install -r requirements.txt
 python app.py
 ```
 
-3. Access the application in your web browser at `http://localhost:8000`.
+
+Sure, let's add that information to the `Usage` section:
+
+---
+
+## Usage
+
+1. Set up environment variables:
+
+   Create a `.env` file in the root directory and add the following:
+
+   ```plaintext
+   PINECONE_API_KEY=<your_pinecone_api_key>
+   PINECONE_INDEX_NAME=<your_pinecone_index_name>
+   ```
+
+2. Run the Flask application:
+
+```bash
+python app.py
+```
+![Example-1](https://raw.githubusercontent.com/Azazel0203/gov_doc/main/static/ex1.jpg)
+![Example -2](https://raw.githubusercontent.com/Azazel0203/gov_doc/main/static/ex2.jpg)
+![Example -3](https://raw.githubusercontent.com/Azazel0203/gov_doc/main/static/ex3.jpg)
+
+3. Run the script to store document indexes:
+
+```bash
+python store_indexes.py
+```
+![Image Alt Text](https://raw.githubusercontent.com/Azazel0203/gov_doc/main/static/out1.jpg)
+This step is necessary to ensure that the document indexes are properly stored in the Pinecone Vector Database for efficient retrieval.
+
+
+4. Access the application in your web browser at `http://localhost:8000`.
+--- 
 
 ## Features
 
