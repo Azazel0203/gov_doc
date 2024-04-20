@@ -1,0 +1,6 @@
+.env
+*.egg-info
+Documents
+streamlit_app.py
+get_pdfs.py
+test.py
